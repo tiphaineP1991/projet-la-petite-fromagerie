@@ -10,20 +10,102 @@
   </head>
 
   <body>
-    <section class="header">
+    <header>
       <h1 class="logo">La Petite Fromagerie</h1>
-      <ul class="liste-menu">
-        <li>Produits</li>
-        <li>Collections</li>
-        <li>Notre philosophie</li>
-      </ul>
-      <i class="fas fa-shopping-bag"></i>
-    </section>
+      <nav>
+        <ul class="liste-menu">
+          <li class="menu-items"><a href="#">Products</a></li>
+          <li class="menu-items"><a href="#">Collections</a></li>
+          <li class="menu-items"><a href="#">Philosophy</a></li>
+        </ul>
+        <div class="shopping-bag">
+          <div class="count">2</div>
+          <i class="fas fa-shopping-bag"></i>
+        </div>
+      </nav>
+    </header>
+
     <section class="hero">
       <h2 class="title">
-        Les meilleurs produits laitiers fermentés du terroir français à côté de
-        chez vous !
+        Les meilleurs produits du terroir français à côté de chez vous !
       </h2>
+    </section>
+
+    <section class="collection">
+      <div class="top">
+        <h3 class="subtitle">Collection</h3>
+        <div class="see-more">
+          <div>See More</div>
+          <i class="fas fa-angle-double-right"></i>
+        </div>
+      </div>
+    </section>
+
+    <section class="collection-items">
+      <div class="item-collection">
+        <img class="img-collec" src="./image/bleu.jpg" alt="les Bleus" />
+        <h4>Les Bleus</h4>
+        <p>See More</p>
+      </div>
+      <div class="item-collection">
+        <img class="img-collec" src=".//image/brebis.jpg" alt="les Brebis" />
+        <h4>Les Brebis</h4>
+        <h5>See More</h5>
+      </div>
+      <div class="item-collection">
+        <img class="img-collec" src="./image/fleuris.jpg" alt="les Fleuris" />
+        <h4>Les Fleuris</h4>
+        <h5>See More</h5>
+      </div>
+      <div class="item-collection">
+        <img class="img-collec" src=".//image/lavés.jpg" alt="les Lavés" />
+        <h4>Les Lavés</h4>
+        <h5>See More</h5>
+      </div>
+      <div class="item-collection">
+        <img
+          class="img-collec"
+          src=".//image/montagne.jpg"
+          alt="les Montagnes"
+        />
+        <h4>Les Montagnes</h4>
+        <h5>See More</h5>
+      </div>
+      <div class="item-collection">
+        <img class="img-collec" src=".//image/Rares.jpg" alt="les Rares" />
+        <h4>Les Rares</h4>
+        <h5>See More</h5>
+      </div>
+    </section>
+
+    <section class="products">
+      <div class="top">
+        <h3 class="subtitle">
+          Nos produits
+        </h3>
+        <div class="highlight">
+          <p>
+            La selection d'automne
+          </p>
+        </div>
+      </div>
+      <section class="product-items">
+        <div class="item-beaufort">
+          <div class="detail">
+            <h5 class="name">Beaufort</h5>
+            <h5>cat : 2</h5>
+            <h5>18€</h5>
+            <h5 class="add">Add to Cart</h5>
+          </div>
+          <div class="item-comte">
+              <div class="detail">
+                <h5 class="name">Comte</h5>
+                <h5>cat : 3</h5>
+                <h5>9€</h5>
+                <h5 class="add">Add to Cart</h5>
+              </div>
+        </div>
+      </section>
     </section>
 
     <script src="./js/main.js"></script>

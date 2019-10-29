@@ -1,58 +1,220 @@
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+/*-----------------IMPORT------------------*/
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,600,700&display=swap");
+
+/*-----------------DEBUG------------------*/
+[debug],
+[debug] * {
+  outline: solid 1px #9400ff;
+  box-shadow: none;
+  filter: none;
+}
+/*-----------------GLOBAL-RULES------------------*/
+:root {
+  --black: #000000;
+  --canard: rgb(5, 88, 94);
+  --beige: rgb(243, 231, 208);
+  --taupe: rgb(183, 196, 199);
 }
 
-h1 {
-  font-size: 36px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+body {
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-size: 24 px;
+  line-height: 1, 5;
+  color: black;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/*-----------------HEADER------------------*/
+header {
+  background-color: rgb(5, 88, 94);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.logo {
+  font-size: 30px;
+  font-family: "Raleway";
   font-weight: 100;
   color: #ffffff;
+  margin-left: 40px;
 }
 
-.header {
-  background-color: rgb(5, 88, 94);
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-}
-.logo {
-  display: flex;
-  align-self: flex-start;
-}
 .liste-menu {
   display: flex;
-  align-self: center;
-  justify-content: space-between;
 }
 
-li {
+.menu-items {
   color: #ffffff;
-  padding-left: 10px;
-  padding-right: 10px;
+  font-size: 20px;
+  margin-right: 30px;
 }
 
 .fas {
+  position: relative;
+  display: flex;
   color: white;
-  align-self: center;
 }
 
-.hero {
-  height: 380px;
+.count {
+  position: absolute;
+  top: +8px;
+  right: +33px;
+  background-color: orangered;
+  color: white;
   display: flex;
+  align-items: center;
   justify-content: center;
-  background-image: url("https://images.unsplash.com/photo-1480951759438-f39a376462f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1049&q=80");
+  width: 15px;
+  height: 15px;
+  font-size: 15px;
+  border-radius: 50%;
+}
+/*-----------------HERO------------------*/
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 68vh;
+
+  background-image: url("../image/photo-1480951759438-f39a376462f2.jpeg");
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .title {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Raleway";
   color: rgb(5, 88, 94);
-  font-size: 50px;
-  font-weight: 200;
-  align-self: center;
-  flex-wrap: wrap;
+  font-size: 40px;
+  font-weight: 400;
+  background-color: rgba(255, 255, 255, 0.5);
   padding-right: 30px;
   padding-left: 30px;
+}
+
+/*-----------------COLLECTIONS------------------*/
+.top {
+  margin-top: 30px;
+  margin-left: 40px;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.subtitle {
+  height: 50px;
+  padding: 10px;
+  background-color: var(--canard);
+  border-radius: 5%;
+  color: white;
+  text-align: center;
+  font-weight: 100;
+  font-size: 28px;
+  transform: rotate(-4deg);
+}
+
+.see-more {
+  margin-right: 40px;
+  display: flex;
+}
+
+.fa-angle-double-right {
+  margin-left: 10px;
+  color: black;
+}
+.collection-items {
+  display: flex;
+  justify-content: space-between;
+  overflow-x: scroll;
+}
+
+.item-collection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  flex-grow: 1;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+.img-collec {
+  height: 50vh;
+  width: 30vw;
+}
+
+h4 {
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  color: var(--canard);
+}
+
+h5 {
+  font-size: 16px;
+  text-decoration: underline var(--canard);
+}
+
+/*-----------------PRODUCTS------------------*/
+
+.products {
+  background-image: linear-gradient(to bottom, var(--beige), var(--taupe));
+  overflow-y: scroll;
+  padding: 20px;
+}
+.products > .top {
+  position: relative;
+}
+
+.highlight {
+  display: flex;
+  height: 110px;
+  width: 110px;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--canard);
+  border-radius: 50%;
+  position: absolute;
+  right: -5px;
+  top: -100px;
+}
+.highlight > p {
+  color: white;
+  text-align: center;
+}
+.product-items {
+  margin-top: 20px;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.item-beaufort {
+  display: flex;
+  background-image: url("../image/Items/beaufort-aop-ete.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  flex-shrink: 60vh;
+}
+
+.item-comte {
+  display: flex;
+  background-image: url("../image/Items/morbier-aop-fermier.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  flex-shrink: 60vh;
 }
