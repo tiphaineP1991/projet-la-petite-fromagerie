@@ -24,7 +24,7 @@ body {
 }
 
 a {
-  color: white;
+  color: var(--black);
   text-decoration: none;
 }
 
@@ -109,9 +109,9 @@ nav {
 /*-----------------COLLECTIONS------------------*/
 .top {
   margin-top: 30px;
-  margin-left: 40px;
+  margin-left: 30px;
   display: flex;
-  align-content: center;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -138,25 +138,23 @@ nav {
 }
 .collection-items {
   display: flex;
-  justify-content: space-between;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
 .item-collection {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-shrink: 0;
-  flex-grow: 1;
-  margin-right: 10px;
+  flex: none;
+  margin-right: 40px;
   margin-bottom: 15px;
 }
 
 .img-collec {
-  height: 50vh;
-  width: 30vw;
+  height: 65vh;
 }
 
+.text-collec {
+  text-align: center;
+  margin-bottom: 30px;
+}
 h4 {
   font-size: 24px;
   padding-top: 10px;
@@ -166,6 +164,7 @@ h4 {
 
 h5 {
   font-size: 16px;
+  color: var(--black);
   text-decoration: underline var(--canard);
 }
 
@@ -173,9 +172,9 @@ h5 {
 
 .products {
   background-image: linear-gradient(to bottom, var(--beige), var(--taupe));
-  overflow-y: scroll;
   padding: 20px;
 }
+
 .products > .top {
   position: relative;
 }
@@ -190,31 +189,163 @@ h5 {
   border-radius: 50%;
   position: absolute;
   right: -5px;
-  top: -100px;
+  top: -80px;
 }
+
 .highlight > p {
   color: white;
   text-align: center;
 }
 .product-items {
-  margin-top: 20px;
   display: flex;
-  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.product-item {
+  position: relative;
+  margin: 30px;
+  overflow: hidden;
+}
+
+.product-item > img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.5s ease-out;
+}
+
+.product-item:hover img {
+  transform: scale(1.2);
+}
+
+.detail {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
+  padding: 15px;
+  z-index: 1;
 }
 
-.item-beaufort {
-  display: flex;
-  background-image: url("../image/Items/beaufort-aop-ete.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  flex-shrink: 60vh;
+.name {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--canard);
+  font-size: 18px;
 }
 
-.item-comte {
+.category {
   display: flex;
-  background-image: url("../image/Items/morbier-aop-fermier.jpg");
-  background-size: contain;
+  align-items: center;
+}
+
+.category p {
+  text-decoration: none;
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.category span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.category span:first-of-type {
+  background-color: var(--canard);
+  margin-right: 5px;
+}
+
+.category span:nth-of-type(2) {
+  background-color: cadetblue;
+  margin-right: 5px;
+}
+
+.category span:nth-of-type(3) {
+  background-color: aqua;
+  margin-right: 5px;
+}
+
+.price {
+  font-style: italic;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.add-to-cart {
+  background-color: white;
+  border-radius: 10%;
+  border-width: 2;
+  border-style: solid;
+  border-color: var(--canard);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.browse-all {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.browse {
+  background-color: white;
+  border-radius: 10%;
+  border-width: 2;
+  border-style: solid;
+  border-color: var(--canard);
+  text-decoration: none;
+  font-weight: 200;
+  font-size: 18px;
+  padding: 5px 10px;
+}
+
+/*---------------------PHILOSOPHY--------------------*/
+
+.philosophy {
+  background-image: url("../image/Items/products/Beau-plateau-de-fromage.jpg");
+  height: 70vh;
+  background-size: cover;
   background-repeat: no-repeat;
-  flex-shrink: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notre-philo {
+  height: 350px;
+  width: 350px;
+  background-color: white;
+  padding: 50px;
+}
+
+.philo-titre {
+  font-size: 24px;
+  font-weight: 100;
+  color: var(--canard);
+  padding-bottom: 15px;
+}
+
+.philo-texte > p {
+  text-align: justify;
+  font-weight: 100;
+}
+
+.philo-texte {
+  padding-bottom: 25px;
+}
+
+.philo-button {
+  background-color: white;
+  border-radius: 10%;
+  border-width: 2;
+  border-style: solid;
+  border-color: var(--canard);
+  text-decoration: none;
+  font-weight: 200;
+  font-size: 18px;
+  padding: 5px 10px;
 }
