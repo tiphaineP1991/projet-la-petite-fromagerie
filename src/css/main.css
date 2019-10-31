@@ -19,12 +19,11 @@
 body {
   font-family: "Raleway", Arial, Helvetica, sans-serif;
   font-size: 24 px;
-  line-height: 1, 5;
+  line-height: 1.5;
   color: black;
 }
 
 a {
-  color: var(--black);
   text-decoration: none;
 }
 
@@ -52,14 +51,33 @@ nav {
   margin-left: 40px;
 }
 
+@media (max-width: 768px) {
+  .logo {
+    font-size: 22px;
+  }
+}
+
 .liste-menu {
   display: flex;
 }
 
 .menu-items {
+  margin-right: 30px;
+}
+@media (max-width: 768px) {
+  .menu-items {
+    margin-right: 15px;
+  }
+}
+
+.menu-items p {
   color: #ffffff;
   font-size: 20px;
-  margin-right: 30px;
+}
+@media (max-width: 768px) {
+  .menu-items p {
+    font-size: 14px;
+  }
 }
 
 .fas {
@@ -82,6 +100,7 @@ nav {
   font-size: 15px;
   border-radius: 50%;
 }
+
 /*-----------------HERO------------------*/
 
 .hero {
@@ -99,11 +118,18 @@ nav {
 .title {
   font-family: "Raleway";
   color: rgb(5, 88, 94);
-  font-size: 40px;
-  font-weight: 400;
+  font-size: 44px;
+  font-weight: 300;
   background-color: rgba(255, 255, 255, 0.5);
   padding-right: 30px;
   padding-left: 30px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 36px;
+  }
 }
 
 /*-----------------COLLECTIONS------------------*/
@@ -316,22 +342,45 @@ h5 {
 }
 
 .notre-philo {
-  height: 350px;
-  width: 350px;
+  height: 450px;
+  width: 450px;
   background-color: white;
   padding: 50px;
 }
+@media (max-width: 768px) {
+  .notre-philo {
+    height: 350px;
+    width: 350px;
+    padding: 50px;
+  }
+}
 
 .philo-titre {
-  font-size: 24px;
-  font-weight: 100;
+  font-size: 36px;
+  font-weight: 200;
   color: var(--canard);
   padding-bottom: 15px;
 }
+@media (max-width: 768px) {
+  .philo-titre {
+    font-size: 24px;
+    font-weight: 100;
+    padding-bottom: 15px;
+  }
+}
 
-.philo-texte > p {
+.philo-texte {
   text-align: justify;
-  font-weight: 100;
+  font-weight: 200;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .philo-texte {
+    text-align: justify;
+    font-weight: 100;
+    font-size: 14px;
+  }
 }
 
 .philo-texte {
@@ -348,4 +397,52 @@ h5 {
   font-weight: 200;
   font-size: 18px;
   padding: 5px 10px;
+}
+
+/*---------------------NL--------------------*/
+
+.newsletter {
+  padding: 60px;
+}
+.newsletter p {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.form-nl {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.form-nl input {
+  height: 30px;
+}
+
+.form-nl button {
+  height: 30px;
+  background-color: var(--canard);
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--canard);
+}
+
+/*---------------------NL--------------------*/
+
+footer {
+  background-color: var(--canard);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+.footer-name {
+  font-size: 14px;
+  color: white;
+}
+
+.madeby {
+  font-size: 14px;
+  color: white;
 }
