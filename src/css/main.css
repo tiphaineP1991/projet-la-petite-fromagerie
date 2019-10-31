@@ -151,6 +151,7 @@ nav {
   font-weight: 100;
   font-size: 28px;
   transform: rotate(-4deg);
+  align-items: center;
 }
 
 .see-more {
