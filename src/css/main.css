@@ -116,7 +116,7 @@ nav {
 }
 
 .subtitle {
-  height: 50px;
+  height: auto;
   padding: 10px;
   background-color: var(--canard);
   border-radius: 5%;
