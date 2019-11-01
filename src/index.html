@@ -13,7 +13,7 @@
     <header>
       <h1 class="logo">La Petite Fromagerie</h1>
       <nav>
-        <ul class="liste-menu">
+        <ul id ="drawer" class="liste-menu">
           <li class="menu-items">
             <a href="#"><p>Products</p></a>
           </li>
@@ -26,7 +26,8 @@
         </ul>
         <div class="shopping-bag">
           <div class="count">2</div>
-          <i class="fas fa-shopping-bag"></i>
+          <svg class = "caddie" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="20.5" r="1"/><circle cx="18" cy="20.5" r="1"/><path d="M2.5 2.5h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6l1.6-8.4H7.1"/></svg>
+          <svg id="hamburger" class ="menu-burger" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 9.5H3M21 4.5H3M21 14.5H3M21 19.5H3"/></svg>
         </div>
       </nav>
     </header>
@@ -52,28 +53,28 @@
         <img class="img-collec" src="./image/bleu.jpg" alt="les Bleus" />
         <div class="text-collec">
           <h4>Les Bleus</h4>
-          <h5><a href="#">See More</a></h5>
+          <a class="seem">See More</a>
         </div>
       </div>
       <div class="item-collection">
         <img class="img-collec" src=".//image/brebis.jpg" alt="les Brebis" />
         <div class="text-collec">
           <h4>Les Brebis</h4>
-          <h5><a href="#">See More</a></h5>
+          <a class="seem">See More</a>
         </div>
       </div>
       <div class="item-collection">
         <img class="img-collec" src="./image/fleuris.jpg" alt="les Fleuris" />
         <div class="text-collec">
           <h4>Les Fleuris</h4>
-          <h5><a href="#">See More</a></h5>
+          <a class="seem">See More</a>
         </div>
       </div>
       <div class="item-collection">
         <img class="img-collec" src=".//image/lavés.jpg" alt="les Lavés" />
         <div class="text-collec">
           <h4>Les Lavés</h4>
-          <h5><a href="#">See More</a></h5>
+          <a class="seem">See More</a>
         </div>
       </div>
       <div class="item-collection">
@@ -84,14 +85,14 @@
         />
         <div class="text-collec">
           <h4>Les Montagnes</h4>
-          <h5><a href="#">See More</a></h5>
+          <a class="seem">See More</a>
         </div>
       </div>
       <div class="item-collection">
         <img class="img-collec" src=".//image/Rares.jpg" alt="les Rares" />
         <div class="text-collec">
           <h4>Les Rares</h4>
-          <h5><a href="#">See More</a></h5>
+          <a class="seem">See More</a>
         </div>
       </div>
     </section>
@@ -194,7 +195,7 @@
       <div><p>Sign up for our newsletter and stay informed</p></div>
       <form class="form-nl">
         <input id = "email" name="email" type = "text" placeholder="you@email.com"></input>
-        <button  class="submit"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></button>
+        <button  class="submit"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke=#ffffff stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></button>
       </form>
     </section>
     <footer class="footer">
