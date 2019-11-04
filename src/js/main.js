@@ -1,8 +1,9 @@
 console.log("it works");
-
-const hamburger = document.querySelector("#hamburger");
-const drawer = document.querySelector("#drawer");
-hamburger.addEventListener("click", () => {
-  drawer.classList.toggle("menu-display");
-  console.log("clicked");
+window.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.querySelector("#hamburger");
+  const drawer = document.querySelector("#drawer");
+  hamburger.addEventListener("click", () => {
+    drawer.classList.toggle("display");
+    console.log("clicked");
+  });
 });
